@@ -1,0 +1,214 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "Teamwork",
+      "category": "Professional skills",
+      "status": "active",
+      "versions": [
+        {
+          "id": 1,
+          "description": "Ability to cooperate, using individual skills and providing constructive feedback, despite any personal conflict between individuals.",
+          "date_created": "2022-12-01",
+          "date_updated": "2022-12-01",
+          "status": "active",
+          "levels": [
+            {
+              "id": 1,
+              "description": "They values other people's opinions. They keep an open mindset and attitude tolearn from others. They listen to what other team members haveto say and ask questions if they don't fully understand something. They make their own tasks and keep the team posted about their own progress."
+            },
+            {
+              "id": 2,
+              "description": "They don’t only focus on their own tasks, but also try to help others out as much as they can. They try to bring in own ideas and express their opinion/feelings about different mattersin order to improve innovation within the team. If they feel overwhelmed with several tasksin the team, they don’t hesitate toask for priorities."
+            },
+            {
+              "id": 3,
+              "description": "They build a good and beneficial rapport with team members and always make them feel appreciated. They communicate opinions and ideas in a clear and concise path totheother team members. They encourage other team members tocontinue to improve themselves."
+            },
+            {
+              "id": 4,
+              "description": "They participate actively in all the team's activities and always display a winning and healthy mentality. They show great skill and ability to be resourceful in a team and use available resources to achieve the highest possible results. They display good planning and organizing skills and ensure that all team activities are handled correctly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Communication",
+      "category": "Professional skills",
+      "status": "active",
+      "versions": [
+        {
+          "id": 1,
+          "description": "Use of tones and language to relay a message; it aids as a vehicle for expressing ideas, concepts and it is critical to the daily running of the business. ",
+          "date_created": "2022-12-01",
+          "date_updated": "2022-12-01",
+          "status": "active",
+          "levels": [
+            {
+              "id": 1,
+              "description": "They are able to communicate in private, but feel insecure when speaking with a larger audience. They find it difficult to express or share their ideas and opinions. They haveto pay closer attention totheir choice of words in order to communicate effectively."
+            },
+            {
+              "id": 2,
+              "description": "They havethe ability to communicate at all levels – up, down and across thebusiness. They normally stick to one way of communication but try to find different ways to adapt theirspeech. They demonstrateempathy and respect for other opinions."
+            },
+            {
+              "id": 3,
+              "description": "They show confidence to express opinions and adapt their message to others interlocutor, adapting their speech to thedifferent audiences. They are nice and polite in all workplace communication situations. They ask proactively for people opinions and listen to them."
+            },
+            {
+              "id": 4,
+              "description": "They create a confident and respectful environment with others when handling a conversation. They give appropriateand quality feedback on a regular basis by Gratitude, Standups, Client calls… They enjoy public speaking by dealing with Software events, training courses... and are considered as communication leaders."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Active listening",
+      "category": "Professional skills",
+      "status": "active",
+      "versions": [
+        {
+          "id": 2,
+          "description": "Ability to make a conscious effort to hear the complete message being communicated and transform it into actions if needed.",
+          "date_created": "2022-12-01",
+          "date_updated": "2022-12-01",
+          "status": "active",
+          "levels": [
+            {
+              "id": 1,
+              "description": "They listen tothe team and client, but don't implement actions. They keep alternative solutions tothemselves as a precaution. They listen totheir teammates but rarely ask questions."
+            },
+            {
+              "id": 2,
+              "description": "They understand and interpret the message to implement the actions needed. They are detail oriented, but sometimes miss thebig picture. They want toimmediately share their thoughtsduring stand-ups or pairing sessions even if the conversation topic is going in a completely different direction."
+            },
+            {
+              "id": 3,
+              "description": "They build trust and establish rapports. They always havea smile and eye contact with all shareholders. They pay attention to meetings and always participateby asking questions and clarifying when needed."
+            },
+            {
+              "id": 4,
+              "description": "They act like a role model to therest of the team by following non - judgmental behaviors. They demonstrateemotional intelligence. They foster a healthy workplace culture, prevents mistakes, and avoids misunderstandingsby working on their active listening regularly."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "description": "Prepare a good description.",
+          "date_created": "2022-10-01",
+          "date_updated": "2022-10-01",
+          "status": "deprecated",
+          "levels": [
+            {
+              "id": 1,
+              "description": "Level 1 for Active Listening."
+            },
+            {
+              "id": 2,
+              "description": "Level 2 for Active Listening."
+            },
+            {
+              "id": 3,
+              "description": "Level 3 for Active Listening."
+            },
+            {
+              "id": 4,
+              "description": "Level 4 for Active Listening."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Software Design",
+      "category": "Knowledge skills",
+      "status": "active",
+      "versions": [
+        {
+          "id": 1,
+          "description": "Refers to all the activities involved in conceptualizing, framing, implementing and ultimately modifying complex systems.",
+          "date_created": "2022-12-01",
+          "date_updated": "2022-12-01",
+          "status": "active",
+          "levels": [
+            {
+              "id": 1,
+              "description": "They can design a simple software architecture separated in the basic layers. Splitting at least viewsfrom API calls."
+            },
+            {
+              "id": 2,
+              "description": "They can detect basic improvementsover the current architecture where they priority is the maintainability, scalability, reusability and consistency."
+            },
+            {
+              "id": 3,
+              "description": "They can design a platform to integratedifferent existing systems. They can design advanced or detect considerable improvements on a current architecture (such as microservices). Adding new layers or removing them to keep the easy use of the application for the team keeping in mind the scalability and sustainability."
+            },
+            {
+              "id": 4,
+              "description": "They can design large and complex microservices arc hitecture using message bus, asynchrony and eventdriven. They use RDBs and NoSQL DBs. They have a High availability or real time and cloud oriented secure architectures."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roles": [
+    { "id": 1, "name": "Frontend developer" },
+    { "id": 2, "name": "Backend developer" },
+    { "id": 3, "name": "Full-stack developer" },
+    { "id": 4, "name": "DevOps" },
+    { "id": 5, "name": "Architect" },
+    { "id": 6, "name": "Delivery manager" },
+    { "id": 7, "name": "Human Resources" },
+    { "id": 8, "name": "Other" }
+  ],
+  "role_levels": [
+    { "id": 1, "name": "Junior" },
+    { "id": 2, "name": "Medior" },
+    { "id": 3, "name": "Senior" }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Íñigo Marquínez Prado",
+      "email": "inigo.marquinez@one-beyond.com"
+    },
+    {
+      "id": 2,
+      "name": "Matteo Di Paolantonio",
+      "email": "matteo.dipaolantonio@dcsl.com"
+    },
+    {
+      "id": 3,
+      "name": "Cristina Torrejón",
+      "email": "cristina.torrejon@one-beyond.com"
+    },
+    {
+      "id": 4,
+      "name": "Juan Manuel Domínguez",
+      "email": "juanmanuel.dominguez@one-beyond.com"
+    },
+    {
+      "id": 5,
+      "name": "Roberto Hernández",
+      "email": "roberto.hernandez@one-beyond.com"
+    },
+    {
+      "id": 6,
+      "name": "Fran Quesada",
+      "email": "fran.quesada@one-beyond.com"
+    },
+    {
+      "id": 7,
+      "name": "Albert Pardo",
+      "email": "albert.pardo@one-beyond.com"
+    }
+  ],
+  "reporting": []
+}
