@@ -1,8 +1,13 @@
 import React from 'react';
-import { Main } from '../../layout';
+import { RouterProvider } from 'react-router-dom';
 
-function App() {
-  return <Main>My App</Main>;
-}
+import { Main } from '../../layout';
+import router from '../../routes';
+
+const App = () => (
+  <Main>
+    <RouterProvider router={router} />
+  </Main>
+);
 
 export default App;
