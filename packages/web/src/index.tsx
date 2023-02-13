@@ -7,7 +7,7 @@ import { createTheme } from '@mui/material';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import './index.css';
-import App from './App';
+import App from './pages/App/App';
 import reportWebVitals from './reportWebVitals';
 import msconfig from './config/msconfig';
 
