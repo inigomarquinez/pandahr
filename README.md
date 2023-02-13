@@ -1,2 +1,3 @@
-# pandahr
+# 🐼 PandaHR
+
 Employee performance tool
