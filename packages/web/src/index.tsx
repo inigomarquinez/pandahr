@@ -1,15 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { PublicClientApplication } from '@azure/msal-browser';
+import { MsalProvider } from '@azure/msal-react';
+import { ThemeProvider } from '@emotion/react';
+import { createTheme } from '@mui/material';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import msconfig from './config/msconfig';
+
+const queryClient = new QueryClient();
+const theme = createTheme();
+const msalInstance = new PublicClientApplication(msconfig);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <MsalProvider instance={msalInstance}>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </QueryClientProvider>
+    </MsalProvider>
   </React.StrictMode>
 );
 
