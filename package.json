@@ -3,5 +3,13 @@
   "workspaces": [
     "packages/web",
     "packages/server"
-  ]
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "husky": "^7.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
 }
