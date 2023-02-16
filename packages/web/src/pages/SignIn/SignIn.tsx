@@ -1,14 +1,10 @@
 import React from 'react';
-import Alert from '@mui/material/Alert';
-import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Grid from '@mui/material/Grid';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Paper from '@mui/material/Paper';
-import Snackbar from '@mui/material/Snackbar';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { useMsal } from '@azure/msal-react';
@@ -16,60 +12,42 @@ import { useMsal } from '@azure/msal-react';
 import { loginScopes } from '../../config/msconfig';
 import { LoginOutlined } from '@mui/icons-material';
 
-const SignIn = () => {
+interface ISignInProps {
+  onSignIn: any;
+}
+
+const SignIn = ({ onSignIn }: ISignInProps) => {
   const { instance } = useMsal();
 
-  const [email, setEmail] = React.useState<string | undefined>();
-  const [alert, setAlert] = React.useState<any>();
+  const handleSubmit = React.useCallback(
+    (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      onSignIn(true);
+      // const data = new FormData(event.currentTarget);
+    },
+    [onSignIn]
+  );
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    setEmail(data.get('email')?.toString());
-  };
-
-  const handleAlertClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-
-    setAlert(null);
-  };
-
-  const handleLoginPopup = async () => {
+  const handleLoginPopup = React.useCallback(async () => {
     try {
-      const result = await instance.loginPopup(loginScopes);
-      // onLoginSuccess(result);
+      await instance.loginPopup(loginScopes);
+      onSignIn(true);
     } catch (error) {
-      // onLoginFailure({ error });
+      onSignIn(false);
     }
-  };
+  }, [instance, onSignIn]);
 
   return (
     <>
-      <Snackbar
-        open={alert !== null}
-        autoHideDuration={4000}
-        onClose={handleAlertClose}
-      >
-        <Alert
-          severity="error"
-          sx={{ width: '100%' }}
-          onClose={handleAlertClose}
-        >
-          {alert}
-        </Alert>
-      </Snackbar>
       <Grid
         item
         xs={false}
         sm={4}
         md={7}
         sx={{
-          backgroundImage: 'url(https://source.unsplash.com/random)',
+          // backgroundImage: 'url(https://source.unsplash.com/random)',
+          // backgroundImage: 'url(https://unsplash.com/es/fotos/lJYi_7NUe04)',
+          backgroundImage: 'url(/pandas.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundColor: (t) =>
             t.palette.mode === 'light'
@@ -89,11 +67,13 @@ const SignIn = () => {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
+          <img src="/logo512.png" alt="logo" loading="lazy" width="250px" />
           <Typography component="h1" variant="h5">
-            Sign in
+            <strong>PandaHR</strong>
+          </Typography>
+          <Typography component="h1" variant="subtitle1">
+            Because pandas love{' '}
+            <span style={{ color: 'green', fontWeight: 900 }}>bamboo</span>
           </Typography>
           <Box
             component="form"

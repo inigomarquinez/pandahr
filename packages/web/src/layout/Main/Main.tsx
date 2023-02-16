@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 
@@ -9,10 +9,12 @@ interface IMainProps {
 }
 
 const Main = ({ children }: IMainProps) => (
-  <Grid container component="main" sx={styles.root}>
-    <CssBaseline />
-    {children}
-  </Grid>
+  <Suspense fallback={<div>Loading</div>}>
+    <Grid container component="main" sx={styles.root}>
+      <CssBaseline />
+      {children}
+    </Grid>
+  </Suspense>
 );
 
 export default Main;
