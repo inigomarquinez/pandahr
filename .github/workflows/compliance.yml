@@ -1,0 +1,10 @@
+name: Compliance
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  scorecard:
+    uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@73d5ee7db82dc00c6c5ff934482be4d359b025b0
