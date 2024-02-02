@@ -1,7 +1,9 @@
-name: Compliance
+name: Security compliance
 
 on:
-  pull_request:
+  schedule:
+    - cron: '0 0 * * 1'
+  push:
     branches:
       - main
   workflow_dispatch:
@@ -11,4 +13,4 @@ jobs:
     permissions:
       security-events: write
       id-token: write
-    uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@7f21dc7467b58086dec77f2215a8decbc14e8bb8
+    uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@7a428442cf347828e4d7aed9352bc40a070351d4
