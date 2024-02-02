@@ -8,5 +8,7 @@ on:
 
 jobs:
   scorecard:
-    permissions: read-all
+    permissions:
+      security-events: write
+      id-token: write
     uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@73d5ee7db82dc00c6c5ff934482be4d359b025b0
