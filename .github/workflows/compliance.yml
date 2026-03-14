@@ -16,4 +16,4 @@ jobs:
     permissions:
       security-events: write
       id-token: write
-    uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@c3a2d114b316d1dee9c6d90ac4685d6182156bac
+    uses: inigomarquinez/reusable-workflows/.github/workflows/openssf-scorecard.yml@30ea0fae2439fa7b2cda42088227c19b5af2e504
